@@ -6,4 +6,17 @@ for i in range(catidad):
     categoria = input("Ingrese la categoria del producto: ")
     talla = input("Ingrese la talla del producto: ")
     precio = int(input("Ingrese el precio del producto: "))
-    cantidad_productos = input("Ingrese la cantidad del producto: ")
+    if precio  <= 0 :
+        print("Ingreso un dato incorrecto")
+    else:
+        cantidad_productos = int(input("Ingrese la cantidad del producto: "))
+        if cantidad_productos <= 0:
+            print("Ingreso un dato incorrecto")
+
+    producto[codigo] = {
+        "nombre_producto": nombre_producto,
+        "categoria": categoria,
+        "talla": talla,
+        "precio": precio,
+        "cantidad_productos": cantidad_productos
+    }
